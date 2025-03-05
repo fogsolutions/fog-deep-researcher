@@ -12,6 +12,8 @@ from langchain_community.document_loaders import (
 )
 from langchain_community.document_loaders import BSHTMLLoader
 
+import warnings
+warnings.filterwarnings('ignore', category=UserWarning, module='openpyxl')
 
 class DocumentLoader:
 
@@ -71,7 +73,7 @@ class DocumentLoader:
                 "pptx": UnstructuredPowerPointLoader(file_path),
                 "csv": UnstructuredCSVLoader(file_path, mode="elements"),
                 "xls": UnstructuredExcelLoader(file_path, mode="elements"),
-                "xlsx": UnstructuredExcelLoader(file_path, mode="elements"),
+                "xlsx": UnstructuredExcelLoader(file_path, mode="elements", ),
                 "md": UnstructuredMarkdownLoader(file_path),
                 "html": BSHTMLLoader(file_path),
                 "htm": BSHTMLLoader(file_path)

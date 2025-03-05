@@ -54,3 +54,5 @@ CURSOR_RULES.md
 research_documents
 .azure_cache/**
 !.azure_cache/.gitkeep
+faiss_index
+.chroma

@@ -26,7 +26,7 @@ dependencies = [
     "tavily-python>=0.2.8",
     "permchain>=0.0.6",
     "arxiv>=2.0.0",
-    "PyMuPDF>=1.23.6",
+    "PyMuPDF",
     "requests>=2.31.0",
     "jinja2>=3.1.2",
     "aiofiles>=23.2.1",
@@ -35,7 +35,7 @@ dependencies = [
     "htmldocx>=0.0.6,<0.0.7",
     "python-docx>=1.1.0,<2",
     "lxml[html_clean]>=4.9.2",
-    "unstructured>=0.13,<0.16",
+    "unstructured[local-inference,pdf]",
     "tiktoken>=0.7.0",
     "json-repair>=0.29.8,<0.30",
     "json5>=0.9.25,<0.10",
@@ -43,6 +43,16 @@ dependencies = [
     "websockets~=13.1",
     "langgraph-cli[inmem]>=0.1.71",
     "azure-storage-blob>=12.24.1",
+    "python-pptx",
+    "pandas>=2.2.3",
+    "networkx>=3.4.2",
+    "openpyxl>=3.1.5",
+    "langchain-unstructured>=0.1.6",
+    "python-magic>=0.4.27",
+    "faiss-cpu>=1.10.0",
+    "langchain-chroma>=0.2.2",
+    "langchain-huggingface>=0.1.2",
+    "langchain-faiss>=0.1.1",
 ]
 
 [tool.pytest.ini_options]
@@ -58,5 +68,6 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
+    "jupyter>=1.1.1",
     "pip>=25.0.1",
 ]
