@@ -53,6 +53,7 @@ dependencies = [
     "langchain-chroma>=0.2.2",
     "langchain-huggingface>=0.1.2",
     "langchain-faiss>=0.1.1",
+    "sentence-transformers>=3.4.1",
 ]
 
 [tool.pytest.ini_options]
